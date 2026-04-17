@@ -1,0 +1,16 @@
+com\ayesha\api\smartcampusapi\DiscoveryResource.class
+com\ayesha\api\smartcampusapi\LinkedResourceNotFoundExceptionMapper.class
+com\ayesha\api\smartcampusapi\LinkedResourceNotFoundException.class
+com\ayesha\api\smartcampusapi\RestApplication.class
+com\ayesha\api\smartcampusapi\Sensor.class
+com\ayesha\api\smartcampusapi\SensorResource.class
+com\ayesha\api\smartcampusapi\SensorReading.class
+com\ayesha\api\smartcampusapi\SensorReadingResource.class
+com\ayesha\api\smartcampusapi\SensorUnavailableExceptionMapper.class
+com\ayesha\api\smartcampusapi\SmartCampusAPI.class
+com\ayesha\api\smartcampusapi\Room.class
+com\ayesha\api\smartcampusapi\RoomResource.class
+com\ayesha\api\smartcampusapi\SensorUnavailableException.class
+com\ayesha\api\smartcampusapi\RoomNotEmptyExceptionMapper.class
+com\ayesha\api\smartcampusapi\RoomNotEmptyException.class
+com\ayesha\api\smartcampusapi\LoggingFilter.class
