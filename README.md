@@ -113,3 +113,48 @@ Stack traces can expose internal system details which is a security risk.
 
 Filters are better for logging because they keep logging separate from business logic.
 
+
+
+---
+
+## Report Answers
+
+### JAX-RS Lifecycle  
+In JAX-RS, a new resource object is usually created for each request. This helps avoid shared state issues. In this project, static lists are used, so the data is shared and could be accessed by multiple requests at once.
+
+### HATEOAS  
+HATEOAS allows APIs to include links in responses so clients know what actions they can take next. This makes the API easier to use.
+
+### IDs vs Full Objects  
+Returning IDs is more efficient, but returning full objects gives more useful information. It depends on the situation.
+
+### DELETE Idempotency  
+DELETE is idempotent because repeating the request does not change the result after the first time.
+
+### @Consumes JSON  
+This ensures the API only accepts JSON input. Other formats will be rejected.
+
+### QueryParam vs Path  
+Query parameters are better for filtering because they are optional and flexible.
+
+### Sub-Resource Locator  
+This helps organise the code by separating logic into smaller classes.
+
+### Data Consistency  
+Updating the current value when adding a reading keeps the data consistent.
+
+### 409 Conflict  
+Used when trying to delete a room that still has sensors.
+
+### 422 vs 404  
+422 is used because the request is valid but the data is incorrect.
+
+### 403 Forbidden  
+Used when a sensor is in maintenance mode and cannot accept readings.
+
+### Stack Trace Risk  
+Stack traces can expose internal system details which is a security risk.
+
+### Logging Filters  
+Filters are better for logging because they keep logging separate from business logic.
+
